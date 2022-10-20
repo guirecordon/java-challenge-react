@@ -22,11 +22,18 @@ export const SignInHeader = styled.header`
 `
 
 export const LoginForm = styled.form`
+  position: relative;
+  
   p {
     text-align: center;
     margin-bottom: 2.5rem;
     color: ${ props => props.theme.darkblue };
   }
+`
+export const Label = styled.label`
+  position: absolute;
+  left: 0;
+  padding: 1rem;
 `
 
 export const EmailInput = styled.input`
@@ -39,7 +46,12 @@ export const EmailInput = styled.input`
   width: 100%;
   color: ${ props => props.theme.light100 };
   font-weight: 400;
+
+  &::placeholder {
+    color: ${ props => props.theme.light100 };
+  }
 `
+
 
 export const FormButton = styled.button`
   background: ${ props => props.theme.light100 };
@@ -51,8 +63,7 @@ export const FormButton = styled.button`
   width: 100%;
   cursor: pointer;
 
-  :hover {
-    /* opacity: 0.4; */
+  &:hover {
     background: ${ props => props.theme.darkblue };
   }
 `

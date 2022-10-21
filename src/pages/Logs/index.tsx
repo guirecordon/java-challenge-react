@@ -1,5 +1,6 @@
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
+import { SearchForm } from "./components/searchForm";
 import { LogsContainer, LogsTable } from "./styles";
 
 export function Logs() {
@@ -7,6 +8,7 @@ export function Logs() {
     <>
       <Header />
       <Summary />
+      <SearchForm />
 
       <LogsContainer>
         <LogsTable>

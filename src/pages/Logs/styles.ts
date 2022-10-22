@@ -19,7 +19,7 @@ export const LogsTable = styled.table`
 
   th {
     text-align: center;
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem 0.5rem;
     background: rgba(0, 0, 0, 0.00);
     color: ${ props => props.theme.gray };
     color: ${ props => props.theme.light100 };
@@ -31,13 +31,13 @@ export const LogsTable = styled.table`
     background: rgba(0, 0, 0, 0.32);
   
     &:first-child {
-      border-top-left-radius: 6px;
-      border-bottom-left-radius: 6px;
+      border-top-left-radius: 48px;
+      border-bottom-left-radius: 48px;
     }
 
     &:last-child {
-      border-top-right-radius: 6px;
-      border-bottom-right-radius: 6px;
+      border-top-right-radius: 48px;
+      border-bottom-right-radius: 48px;
     }
   }
 

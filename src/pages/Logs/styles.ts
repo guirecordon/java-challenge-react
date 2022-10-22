@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const ColorWrapper = styled.div`
+  background: #6e5f5f;
+` 
+
 export const LogsContainer = styled.main`
   width: 100%;
   max-width: 1120px;
@@ -15,26 +19,16 @@ export const LogsTable = styled.table`
 
   th {
     text-align: center;
-    padding: 0.825rem 0.5rem;
-    background: ${props => props.theme.light100};
+    padding: 0.25rem 0.5rem;
+    background: rgba(0, 0, 0, 0.00);
     color: ${ props => props.theme.gray };
-
-    &:first-child {
-      border-top-left-radius: 6px;
-      border-bottom-left-radius: 6px;
-    }
-
-    &:last-child {
-      border-top-right-radius: 6px;
-      border-bottom-right-radius: 6px;
-    }
-    
+    color: ${ props => props.theme.light100 };
   }
 
   td {
     text-align: center;
     padding: 1.25rem 1rem;
-    background: ${props => props.theme.darkblue};
+    background: rgba(0, 0, 0, 0.32);
   
     &:first-child {
       border-top-left-radius: 6px;

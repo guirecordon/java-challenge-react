@@ -4,7 +4,7 @@ import { MagnifyingGlass } from 'phosphor-react';
 export function SearchForm() {
   return (
     <SearchFormContainer>
-      <SearchInput />
+      <SearchInput placeholder="Buscar por palavra chave..." />
 
       <SearchButton>
         <MagnifyingGlass size={18} weight="bold" />

@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 
 export const HeaderContainer = styled.header`
-  background: ${ props => props.theme.darkblue };
-  padding: 2.5rem 0 7.5rem;
+  background: ${ props => props.theme.gray };
+  padding: 2.5rem 0 4.5rem;
 `
 
 export const HeaderContent = styled.div`
@@ -17,8 +17,8 @@ export const HeaderContent = styled.div`
   align-items: center;
 
   img {
-    height: 6.25rem;
-    width: 6.25rem;
+    height: 10.25rem;
+    width: 10.25rem;
   }
 
   button {
@@ -27,12 +27,13 @@ export const HeaderContent = styled.div`
     padding: 1rem;
     outline: 0;
     border: 0;
-    border-radius: 24px;
-    width: 11.25rem;
+    border-radius: 48px;
+    width: 13.25rem;
     cursor: pointer;
 
     &:hover {
       background: ${ props => props.theme.darkblue };
+      color: ${ props => props.theme.gray };
       transition: background-color 0.2s;
     }
   }

@@ -28,9 +28,9 @@ export const Content = styled(Dialog.Content)`
     gap: 1rem;
 
     input {
-      border-radius: 6px;
+      border-radius: 48px;
       border: 0;
-      background: ${ props => props.theme.blue };
+      background: rgba(0, 0, 0, 0.2);
       color: ${ props => props.theme.light100 };
       padding: 1rem;
 
@@ -42,16 +42,16 @@ export const Content = styled(Dialog.Content)`
     button[type="submit"] {
         height: 58px;
         border: 0; 
-        background: ${ props => props.theme.green };
-        color: ${ props => props.theme.light100 };
+        background: ${ props => props.theme.light100 };
+        color: ${ props => props.theme.darkblue };
         font-weight: bold;
         padding: 0 1.25rem;
-        border-radius: 6px;
+        border-radius: 48px;
         margin-top: 1.5rem;
         cursor: pointer;
 
         &:hover {
-          background: ${ props => props.theme.blue };
+          background: ${ props => props.theme.gray };
           transition: background-color 0.2s;
         }
       }
@@ -65,5 +65,6 @@ export const CloseButton = styled(Dialog.Close)`
   top: 1.5rem;
   right: 1.5rem;
   line-height: 0;
+  color: ${ props => props.theme.light100 };
   cursor: pointer;
 `
